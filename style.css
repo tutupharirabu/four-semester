@@ -1,0 +1,103 @@
+/* Mengimpor dan menghubungkan gaya font Poppins dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Menetapkan nol margin dan padding untuk semua elemen, menggunakan model box-sizing border-box,
+dan mengatur font-family menjadi 'Poppins' dengan fallback ke sans-serif untuk semua elemen. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Mengatur semua hal yang berkaitan dengan body web */
+body {
+    background: #F2E3DB;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Mengatur semua hal yang berkaitan dengan header web */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Mengatur semua hal yang berkaitan dengan tulisan pada class = "logo" */
+.logo {
+    font-size: 2em;
+    color: #41644A;
+    pointer-events: none;
+    margin-right: 100px;
+}
+
+/* Mengatur semua hal yang berkaitan dengan menu navigasi */
+.navigation a {
+    text-decoration: none;
+    color: #41644A;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+/* Mengatur semua hal yang berkaitan dengan latar belakang menu navigasi */
+.navigation a:hover, 
+.navigation a.active {
+    background: #41644A;
+    color: #F2E3DB;
+}
+
+/* Mengatur semua hal yang berkaitan dengan posisi elemen paralaks */
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+
+/* Mengatur semua hal yang berkaitan dengan teks pada elemen paralaks tersebut */
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #263A29;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+/* Mengatur semua hal yang berkaitan dengan gambar yang terdapat dalam elemen paralaks */
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+/* Mengatur semua hal yang berkaitan dengan class = "sec" */
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+
+/* Mengatur semua hal yang berkaitan dengan class = "sec" */
+.sec h2 {
+    font-size: 3em;
+    color: #F2E3DB;
+    margin-bottom: 10px;
+}
+
+/* Mengatur semua hal yang berkaitan dengan paragraf pada class = "sec" */
+.sec p {
+    font-size: 1em;
+    color: #F2E3DB;
+    font-weight: 300;
+}
